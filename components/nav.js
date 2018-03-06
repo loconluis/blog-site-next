@@ -42,23 +42,35 @@ const Nav = () => (
         font-family: -apple-system,BlinkMacSystemFont,Avenir Next,Avenir,Helvetica,sans-serif;
       }
       nav {
+        position: fixed;
         text-align: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
       }
       ul {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
       }
       nav > ul {
-        padding: 4px 16px;
+        padding: 4px 36px;
       }
       li {
         display: flex;
-        padding: 6px 8px;
+        padding: 6px 18px;
       }
       a {
-        color: #067df7;
+        color: #333;
+        font-weight: ligther;
         text-decoration: none;
-        font-size: 13px;
+        font-size: 20px;
+        padding: 5px 10px;
+      }
+      a:hover {
+        background-color: #333;
+        color: white;
+        padding: 5px 10px;
       }
     `}</style>
   </nav>
