@@ -2,33 +2,40 @@ import Head from './head'
 import Link from 'next/link'
 
 const links = [
-  { href: 'https://github.com/segmentio/create-next-app', label: 'Github' }
-].map(link => {
-  link.key = `nav-link-${link.href}-${link.label}`
+  {
+    href: '/',
+    label: 'Home'
+  },
+  {
+    href: '/about',
+    label: 'About Me'
+  },
+  {
+    href: '/portfolio',
+    label: 'Portfolio'
+  },
+  {
+    href: '/blog',
+    label: 'Blog'
+  },
+].map((link, i) => {
+  link.key = `nav-link-${link.href}-${link.label}-${i}`
   return link
 })
 
 const Nav = () => (
   <nav>
     <ul>
-      <li>
-        <Link prefetch href="/">
-          <a>Home</a>
-        </Link>
-      </li>
-      <ul>
-        {links.map(
-          ({ key, href, label }) => (
-            <li key={key}>
-              <Link href={href}>
-                <a>{label}</a>
-              </Link>
-            </li>
-          )
-        )}
-      </ul>
+      {
+        links.map(link => (
+          <li key={link.key}>
+            <Link prefetch href={link.href}>
+              <a>{link.label}</a>
+            </Link>
+          </li> 
+        ))
+      }
     </ul>
-
     <style jsx>{`
       :global(body) {
         margin: 0;
@@ -58,3 +65,18 @@ const Nav = () => (
 )
 
 export default Nav
+// <Link prefetch href="/">
+//           <a>Home</a>
+//         </Link>
+
+// <ul>
+//         {links.map(
+//           ({ key, href, label }) => (
+//             <li key={key}>
+//               <Link href={href}>
+//                 <a>{label}</a>
+//               </Link>
+//             </li>
+//           )
+//         )}
+//       </ul>
