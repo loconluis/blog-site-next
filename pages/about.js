@@ -10,14 +10,14 @@ const About = () => (
       <div className="row">
         <div className="main-card__avatar">
           <Avatar
-            url="https://avatars0.githubusercontent.com/u/12422912?s=460&v=4"
+            url="https://loconluis.github.io/img/responsive.JPG"
             name="perfil"
-            x="200"
-            y="200"
+            x="300"
+            y="300"
           />
         </div>
         <div className="main-card__info">
-          here goes data about me
+          <p></p>
         </div>
       </div>
     </div>
@@ -36,15 +36,19 @@ const About = () => (
         height: 100vh;
       }
       .main-card__avatar, .main-card__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 60vh;
         width: 60vh;
-        border: 1px solid blue;
       }
       .main-card__avatar: {
+        flex-direction: column;
         margin-right: 10px;
       }
       .main-card__info {
         margin-left: 10px;
+        border: 1px solid #eee;
       }
     `}
     </style>

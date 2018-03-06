@@ -66,11 +66,15 @@ const Nav = () => (
         text-decoration: none;
         font-size: 20px;
         padding: 5px 10px;
+        transition: all .3s;
+        border-radius: 10%;
       }
       a:hover {
         background-color: #333;
+        border-radius: 10%;
         color: white;
         padding: 5px 10px;
+        transform: scale(1);
       }
     `}</style>
   </nav>
