@@ -24,8 +24,8 @@ const socials = [
 export default () => (
   <ul>
     {
-      socials.map(social => (
-        <li>
+      socials.map((social, i) => (
+        <li key={`${social.name}+${i}`}>
           <a href={social.url} target="_blank">
             <i className={social.icon}></i>
           </a>
@@ -34,12 +34,15 @@ export default () => (
     }
     <style jsx>{`
       ul {
+        padding-left: 0;
         display: flex;
         justify-content: center;
       }
       li {
         display: flex;
         padding: 6px 18px;
+      }
+      li:first_child {
       }
       a {
         font-size: 20px;
@@ -50,7 +53,7 @@ export default () => (
       }
       a:hover {
         color: #333;
-        transform: scale(1.3);
+        transform: scale(1);
       }
     `}</style>
   </ul>
