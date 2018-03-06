@@ -1,5 +1,6 @@
 import Head from '../components/head'
 import Nav from '../components/nav'
+import Avatar from '../components/avatar'
 
 const About = () => (
   <div>
@@ -8,7 +9,12 @@ const About = () => (
     <div className="main-card">
       <div className="row">
         <div className="main-card__avatar">
-          here goes an avatar
+          <Avatar
+            url="https://avatars0.githubusercontent.com/u/12422912?s=460&v=4"
+            name="perfil"
+            x="200"
+            y="200"
+          />
         </div>
         <div className="main-card__info">
           here goes data about me
