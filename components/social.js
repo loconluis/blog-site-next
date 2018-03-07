@@ -32,6 +32,11 @@ export default () => (
         </li>
       ))
     }
+    <li>
+      <a href="https://drive.google.com/file/d/0B8E_NJffMWddano2ZDJnSHpDN1U/view" target="_blank">
+        CV
+      </a>
+    </li>
     <style jsx>{`
       ul {
         padding-left: 0;

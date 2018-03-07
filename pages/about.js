@@ -4,7 +4,7 @@ import Avatar from '../components/avatar'
 
 const About = () => (
   <div>
-    <Head title="About Me"/>
+    <Head title="Luis Locon | About Me"/>
     <Nav />
     <div className="main-card">
       <div className="row">
@@ -17,7 +17,15 @@ const About = () => (
           />
         </div>
         <div className="main-card__info">
-          <p></p>
+          <div>
+            <p>Hello, I'm a Developer and web enthusiast, looking for opportunities to learn and collaborate into different projects.</p>
+            <p>At this time, I am working with <strong><a href="http://www.estratek.com/" target="_blank">Estratek</a></strong>, and in my free time I participate in project, and community activities.</p>
+          </div>
+          <div>
+            <p>
+              Contact me: <strong><a href="mailto:luis.locon@gmail.com">luis.locon@gmail.com</a></strong>
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -39,7 +47,6 @@ const About = () => (
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 60vh;
         width: 60vh;
       }
       .main-card__avatar: {
@@ -47,8 +54,21 @@ const About = () => (
         margin-right: 10px;
       }
       .main-card__info {
+        color: #333;
+        padding: 10px;
+        flex-direction: column;
+        align-items: right;
         margin-left: 10px;
-        border: 1px solid #eee;
+        font-size: 20px;
+      }
+      .main-card__info a {
+        text-decoration: none;
+        color: #333;
+      }
+      .main-card__info a:hover {
+        text-decoration: underline;
+        text-decoration-color: #FF00FF;
+        color: #333;
       }
     `}
     </style>

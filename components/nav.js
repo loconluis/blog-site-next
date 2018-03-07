@@ -8,7 +8,7 @@ const links = [
   },
   {
     href: '/about',
-    label: 'About Me'
+    label: 'About me'
   },
   {
     href: '/portfolio',
@@ -61,7 +61,7 @@ const Nav = () => (
         padding: 6px 18px;
       }
       a {
-        color: #333;
+        color: #a8a8a8;
         font-weight: ligther;
         text-decoration: none;
         font-size: 20px;
@@ -70,9 +70,10 @@ const Nav = () => (
         border-radius: 10%;
       }
       a:hover {
-        background-color: #333;
         border-radius: 10%;
-        color: white;
+        text-decoration: underline;
+        text-decoration-color: #FF00FF;
+        color: #333;
         padding: 5px 10px;
         transform: scale(1);
       }

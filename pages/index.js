@@ -6,7 +6,7 @@ import Nav from '../components/nav'
 const Subtitle = () => (
   <div>
     <div className="hero_subtitle">
-      <p>Web Developer @ <a href="http://www.estratek.com/" target="_blank">ESTRATEK</a></p>
+      <p>Web Developer @ <a href="http://www.estratek.com/" target="_blank"><span className="hero_subtitle_bold">ESTRATEK</span></a></p>
     </div>
     <style jsx>{`
       .hero_subtitle {
@@ -14,11 +14,11 @@ const Subtitle = () => (
         heigth: 30px;
         cursor: pointer;
         background-color: black;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.15), 0 1px 2px rgba(0,0,0,0.20);
         transition: all 0.3s cubic-bezier(.25,.8,.25,1);
       }
       .hero_subtitle:hover {
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        box-shadow: 0 14px 28px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.12)
       }
       .hero_subtitle p {
         padding: 5px 15px;
@@ -33,13 +33,16 @@ const Subtitle = () => (
       .hero_subtitle a:hover {
         text-decoration: underline;
       }
+      .hero_subtitle_bold {
+        font-weight: bold;
+      }
     `}</style>
   </div>
 )
 
 export default () => (
   <div>
-    <Head title="Home" />
+    <Head title="Luis Locon | Resumé" />
     <Nav />
 
     <div className="hero">
