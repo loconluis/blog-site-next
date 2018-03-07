@@ -18,12 +18,12 @@ const About = () => (
         </div>
         <div className="main-card__info">
           <div>
-            <p>Hello, I'm a Developer and web enthusiast, looking for opportunities to learn and collaborate into different projects.</p>
-            <p>At this time, I am working with <strong><a href="http://www.estratek.com/" target="_blank">Estratek</a></strong>, and in my free time I participate in project, and community activities.</p>
+            <p>Hello, I'm a developer and web enthusiast ⚡️, looking for opportunities to learn and collaborate into different projects.</p>
+            <p>At this time, I am working with <strong><a href="http://www.estratek.com/" target="_blank">Estratek 🆒</a></strong>, and in my free time I participate in project, and community activities.</p>
           </div>
           <div>
             <p>
-              Contact me: <strong><a href="mailto:luis.locon@gmail.com">luis.locon@gmail.com</a></strong>
+              Contact me: <strong><a href="mailto:luis.locon@gmail.com">luis.locon@gmail.com</a></strong> ✌🏼
             </p>
           </div>
         </div>
@@ -69,6 +69,14 @@ const About = () => (
         text-decoration: underline;
         text-decoration-color: #FF00FF;
         color: #333;
+      }
+      @media (max-width: 812px) {
+        .row {
+          flex-direction: column;
+        }
+        .main-card__info {
+          font-size: 14px;
+        }
       }
     `}
     </style>

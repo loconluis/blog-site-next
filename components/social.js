@@ -45,7 +45,7 @@ export default () => (
       }
       li {
         display: flex;
-        padding: 6px 18px;
+        padding: 6px 10px;
       }
       li:first_child {
       }

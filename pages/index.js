@@ -47,7 +47,7 @@ export default () => (
     <Nav />
 
     <div className="hero">
-      <h1 className="title">Luis Locon</h1>
+      <h1 className="title">Luis Locon 👨🏻‍💻</h1>
       <Subtitle />
     </div>
 
