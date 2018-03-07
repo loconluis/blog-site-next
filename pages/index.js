@@ -24,6 +24,7 @@ const Subtitle = () => (
         padding: 5px 15px;
         font-size: 20px;
         font-weight: lighter;
+        letter-spacing: 2px;
       }
       .hero_subtitle a {
         cursor: pointer;
@@ -66,6 +67,7 @@ export default () => (
         line-height: 1.15;
         font-size: 78px;
         font-weight: lighter;
+        letter-spacing: 2px;
       }
       .title, .description {
         text-align: center;
