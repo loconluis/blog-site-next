@@ -18,7 +18,7 @@ const Blog = (props) => {
             key={node.id}
           >
             <p>{moment(node.createdAt).format('MMMM Do, YYYY')}</p>
-            <Link prefetch as={`blog/p/${node.title.split(' ').join('-').toLowerCase()}`} href={`/post?id=${node.id}&user=${USERNAME}`}>
+            <Link prefetch as={`/blog/p/${node.title.split(' ').join('-').toLowerCase()}`} href={`/post?id=${node.id}&user=${USERNAME}`}>
               <a>{node.title}</a>
             </Link>
           </li>
