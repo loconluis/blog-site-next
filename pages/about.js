@@ -18,8 +18,15 @@ const About = () => (
         </div>
         <div className="main-card__info">
           <div>
-            <p>Hello, I'm a developer and web enthusiast ⚡️, looking for opportunities to learn and collaborate into different projects.</p>
-            <p>At this time, I am working with <strong><a href="http://www.estratek.com/" target="_blank">Estratek 🆒</a></strong>, and in my free time I participate in project, and community activities.</p>
+            <p>
+              Hello, I'm a developer and web enthusiast ⚡️, 
+              looking for opportunities to learn and collaborate 
+              into different projects. My area of ​​expertise is Javascript, mostly applied to the Front-End. 
+            </p>
+            <p>
+              At this time, I am working with <strong><a href="http://www.estratek.com/" target="_blank">Estratek 🆒</a></strong>, 
+              and in my free time I participate in personal project, 
+              and community activities. </p>
           </div>
           <div>
             <p>
