@@ -17,8 +17,15 @@ export default () => {
           padding: 10px 60px;
         }
         .logo {
+          text-align: center;
           cursor: pointer;
           margin: 0;
+        }
+        @media (max-width: 812px) {
+          h1 {
+            font-size:45px;
+            letter-spacing: 1px;
+          }
         }
       `}</style>
     </div>

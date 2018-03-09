@@ -52,6 +52,18 @@ const Blog = (props) => {
       .post_link p {
         color: #a8a8a8;
       }
+      @media (max-width: 812px) {
+        .title {
+          font-size:55px;
+          letter-spacing: 1px;
+        }
+        .row {
+          margin: 10px;
+        }
+        ul {
+          padding: 10px;
+        }
+      }
     `}
     </style>
   </div>

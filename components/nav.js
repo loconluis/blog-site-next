@@ -77,6 +77,17 @@ const Nav = () => (
         padding: 5px 10px;
         transform: scale(1);
       }
+      @media (max-width: 812px) {
+        nav > ul {
+          padding: 4px 0px;
+        }
+        li {
+          padding: 3px 3px;
+        }
+        a {
+          padding: 5px;
+        }
+      }
     `}</style>
   </nav>
 )

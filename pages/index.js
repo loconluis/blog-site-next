@@ -36,6 +36,12 @@ const Subtitle = () => (
       .hero_subtitle_bold {
         font-weight: bold;
       }
+      @media (max-width: 812px) {
+        .hero_subtitle p {
+          font-size: 15px;
+          letter-spacing: 1.3px;
+        }
+      }
     `}</style>
   </div>
 )
@@ -70,6 +76,12 @@ export default () => (
       }
       .title, .description {
         text-align: center;
+      }
+      @media (max-width: 812px) {
+        .title {
+          font-size:55px;
+          letter-spacing: 1px;
+        }
       }
     `}</style>
   </div>

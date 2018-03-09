@@ -54,7 +54,7 @@ const About = () => (
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 60vh;
+        
       }
       .main-card__avatar: {
         flex-direction: column;
@@ -79,10 +79,15 @@ const About = () => (
       }
       @media (max-width: 812px) {
         .row {
+          width: 100vw;
           flex-direction: column;
         }
         .main-card__info {
           font-size: 14px;
+        }
+        .main_card__avatar, .main_card__info {
+          margin: 0;
+          align-items: center;
         }
       }
     `}
