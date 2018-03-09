@@ -57,6 +57,7 @@ Post.getInitialProps = async (context) => {
   const database = firebase.database();
   const data = await database.ref(`/users/${user}/posts/${id}`).once('value')
   const res = await data.val()
+  console.log('url', `/users/${user}/posts/${id}`)
   console.log('res', res)
   return { res }
 }
